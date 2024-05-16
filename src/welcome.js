@@ -1,6 +1,6 @@
 import React from "react";
 
-function welcome() {
+function Welcome() {
     return (
         <di>
             <h1>WELCOME</h1>
@@ -8,4 +8,4 @@ function welcome() {
     )
 }
 
-export default welcome();
+export default Welcome();

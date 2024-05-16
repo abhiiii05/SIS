@@ -1,59 +1,33 @@
 import React, {useState} from 'react';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import SignInWithGoogle from './SignInWithGoogle';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-//import './index.html'
-//import welcome from "./welcome";
+import './index.css'
 
-function IndexPage(){
-    return(
-        <div>
-            <h1>HI</h1>
-        </div>
-    );
-}
+
 function App() {
     const[isLoggedin, setIsLoggedIn] = useState(false);
-    //const nav = useNavigate();
-
-    // const successfulSignIn = (response) => {
-    //     console.log("Successful sign in : ",  response);
-    //     setIsLoggedIn(true);
-    //     nav('/welcome');
-    // };
+    const successfulSignIn = (response) => {
+        console.log( "successfully signed in : ", response);
+        setIsLoggedIn(true)
+        window.location.replace('.src/welcome.js')
+     }
     return (
-        <BrowserRouter>
-
+        <div className="min-h-screen bg-[#183957]  flex flex-col justify-center items-center">
             <GoogleOAuthProvider clientId="50247589356-79m9e84j9naggbu4dhsmnu1kv5an8khj.apps.googleusercontent.com">
-                <div className="App">
-                    <Routes>
-                        <Route path="/" element={<SignInWithGoogleWrapper setLoggedIn={setIsLoggedIn} />} />
-                        <Route path="/welcome" element={<IndexPage />}/>
-                        <Route path="*" element={<Navigate to="/" replace />} />
-                    </Routes>
-                    <welcome/>
-                    <h1>Welcome to My App</h1>
-                    {isLoggedin ? (<h1><p>You are logged in!</p></h1>) :
-                        (
-                        <SignInWithGoogle onSuccessfulSignIn={() => setIsLoggedIn(true)} />
-                    )}
+                <div className="App ">
+                    <h1 className="text-white font-bold font-jomolhari mb-8 fixed top-14 left-0 right-0 bg-[#183957] py-4 text-center text-4xl">SHARJAH
+                        INDIAN SCHOOL JUWAIZA</h1>
+                    {isLoggedin ? (<h1></h1>) :
+                         (<SignInWithGoogle onSuccessfulSignIn={successfulSignIn}/>)}
                 </div>
-            </GoogleOAuthProvider>
+</GoogleOAuthProvider>
+</div>
 
-        </BrowserRouter>
-    );
+)
+    ;
 }
 
-function SignInWithGoogleWrapper({setLoggedIn}) {
-    const navigate = useNavigate();
-    const successSignIn = (response) => {
-        console.log("Sign in successful : ", response);
-        setLoggedIn(true);
-        navigate('/welcome')
-    };
-    return <SignInWithGoogle onSuccessfulSignIn={successSignIn}/>
-}
+
 export default App;
 
 
