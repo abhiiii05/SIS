@@ -52,7 +52,8 @@ import landing2 from'./landing 2.png'
                  <h1 className="text-black font-bold font-jomolhari text-4xl mb-4">
                      SHARJAH INDIAN SCHOOL JUWAIZA
                  </h1>
-                 <p className="text-black leading-relaxed font-jomolhari">
+                 <br/>
+                 <p className="text-black leading-relaxed font-jomolhari text-lg">
                      Sharjah Indian School is a Senior Secondary School, Owned and Managed by
                      <br/>
                      Indian Association Sharjah. Established in 1979 with
@@ -68,7 +69,7 @@ import landing2 from'./landing 2.png'
                       UAE and is affiliated to Central Board of Secondary Education New Delhi, India.
                  </p>
 
-                 <img src={landing2} alt = " image" className="translate-x-96  -translate-y-52 scale-50"/>
+                 <img src={landing2} alt = " image" className="translate-x-full -translate-y-64 scale-90 ml-60 "/>
              </div>
 
 
