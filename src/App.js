@@ -3,6 +3,7 @@
 // import SignInWithGoogle from './SignInWithGoogle';
 import './index.css'
 // import schoolLogo from  './trial-removebg-preview.png'
+import bannermainImage from './bannermain.png'
 
  function App() {
 //     const[isLoggedin, setIsLoggedIn] = useState(false);
@@ -33,15 +34,40 @@ import './index.css'
 //     )
 //         ;
 // }
-
+     //translate-x-52
+     //min-h-screen h-screen
 
      return (
-         <div className="min-h-screen h-screen bg-[#A5BCC9]">
-             <div className="bg-[#183957] w-full h-24">
+         <div className=" bg-[#A5BCC9] overflow-auto overflow-x-hidden">
+             <div className="bg-[#183957] w-full py-6">
                  <button className= "text-amber-50">click me</button>
                  <h1 className="text-white font-bold font-jomolhari translate-x-52 text-4xl">SHARJAH INDIAN SCHOOL JUWAIZA</h1>
                  <h1 className="text-white translate-x-52">EDUCATE | ENLIGHTEN | EMPOWER</h1>
              </div>
+             <div>
+                 <img src={bannermainImage} alt="main banner" className="w-full"/>
+             </div>
+             <div className="px-8 py-12">
+                 <h1 className="text-black font-bold font-jomolhari text-4xl mb-4">
+                     SHARJAH INDIAN SCHOOL JUWAIZA
+                 </h1>
+                 <p className="text-black leading-relaxed font-jomolhari">
+                     Sharjah Indian School is a Senior Secondary School, Owned and Managed by
+                     <br/>
+                     Indian Association Sharjah. Established in 1979 with
+                     <br/>
+                     280 pupils and 13 teachers, the school stands as a landmark in the annals of the Indo-UAE
+                     <br/>
+                     friendship. Today after 43 years, the school
+                     <br/>
+                     has a strength of 5528 (total) students and 305 (total) teachers.
+                     <br/>
+                     The school is approved and licensed by the Sharjah Private Education Authority (SPEA) ,
+                     <br/>
+                      UAE and is affiliated to Central Board of Secondary Education New Delhi, India.
+                 </p>
+             </div>
+
 
          </div>
      )
