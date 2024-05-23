@@ -4,6 +4,7 @@
 import './index.css'
 // import schoolLogo from  './trial-removebg-preview.png'
 import bannermainImage from './bannermain.png'
+import landing2 from'./landing 2.png'
 
  function App() {
 //     const[isLoggedin, setIsLoggedIn] = useState(false);
@@ -66,6 +67,8 @@ import bannermainImage from './bannermain.png'
                      <br/>
                       UAE and is affiliated to Central Board of Secondary Education New Delhi, India.
                  </p>
+
+                 <img src={landing2} alt = " image" className="translate-x-96  -translate-y-52 scale-50"/>
              </div>
 
 
