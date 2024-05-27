@@ -5,6 +5,7 @@ import './index.css'
 // import schoolLogo from  './trial-removebg-preview.png'
 import bannermainImage from './bannermain.png'
 import landing2 from'./landing 2.png'
+import image2 from './image2.png'
 import button1 from './buttton1.png'
 // import {Link} from "react-router-dom";
 import { Link, animateScroll as scroll } from 'react-scroll';
@@ -12,9 +13,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 
 
 function App() {
-    function handleButtonClick() {
-        console.log("hi")
-    }
+    // +
 //     const[isLoggedin, setIsLoggedIn] = useState(false);
 //     const successfulSignIn = (response) => {
 //         console.log( "successfully signed in : ", response);
@@ -79,7 +78,7 @@ function App() {
                      UAE and is affiliated to Central Board of Secondary Education New Delhi, India.
                  </p>
                  <img src={landing2} alt=" image"
-                      className="translate-x-full -translate-y-64 scale-90 ml-60 transform-gpu "/>
+                      className="translate-x-full rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700"/>
              </div>
              {/*<button onClick={handleButtonClick} className="translate-x-96 ml-96">*/}
              {/*    <div className="relative animate-bounce">*/}
@@ -88,23 +87,23 @@ function App() {
              {/*</button>*/}
              <div className="translate-x-96 -translate-y-96 ml-64 w-80 h-80">
                  <button
-                     onClick={handleButtonClick}
                      className="relative p-0 bg-transparent border-none cursor-pointer scale-50 ">
                      <Link
                          to="target-element"
                          smooth={true}
-                         duration={950}
+                         duration={1500}
                          className="cursor-pointer"
                      >
-                         <img src={button1} alt="button1" className="scale-50"/>
+                         <img src={button1} alt="button1" className="scale-50 "/>
                      </Link>
                  </button>
              </div>
              <div className="bg-[#183957] w-full py-6 -translate-y-96 -my-20"></div>
 
              <div id="target-element">
-                 <img src={landing2} alt=" image" className="-translate-x-52  -translate-y-64 scale-90 ml-60 transform-gpu "/>
+                 <img src={image2} alt=" image" className="-translate-x-52 rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700" />
              </div>
+             
          </div>
 
      )
