@@ -5,8 +5,14 @@ import './index.css'
 // import schoolLogo from  './trial-removebg-preview.png'
 import bannermainImage from './bannermain.png'
 import landing2 from'./landing 2.png'
+import button1 from './buttton1.png'
 
- function App() {
+
+
+function App() {
+    function handleButtonClick() {
+        console.log("hi")
+    }
 //     const[isLoggedin, setIsLoggedIn] = useState(false);
 //     const successfulSignIn = (response) => {
 //         console.log( "successfully signed in : ", response);
@@ -41,19 +47,21 @@ import landing2 from'./landing 2.png'
      return (
          <div className=" bg-[#A5BCC9] overflow-auto overflow-x-hidden">
              <div className="bg-[#183957] w-full py-6">
-                 <button className= "text-amber-50">click me</button>
-                 <h1 className="text-white font-bold font-jomolhari translate-x-52 text-4xl">SHARJAH INDIAN SCHOOL JUWAIZA</h1>
+                 <button className="text-amber-50">click me</button>
+                 <h1 className="text-white font-bold font-jomolhari translate-x-52 text-4xl">SHARJAH INDIAN SCHOOL
+                     JUWAIZA</h1>
                  <h1 className="text-white translate-x-52">EDUCATE | ENLIGHTEN | EMPOWER</h1>
              </div>
              <div>
-                 <img src={bannermainImage} alt="main banner" className="w-full"/>
+                 <img src={bannermainImage} alt="main banner" className="w-full transform-gpu"/>
              </div>
+             <div className="bg-[#183957] w-full py-6"></div>
              <div className="px-8 py-12">
                  <h1 className="text-black font-bold font-jomolhari text-4xl mb-4">
                      SHARJAH INDIAN SCHOOL JUWAIZA
                  </h1>
                  <br/>
-                 <p className="text-black leading-relaxed font-jomolhari text-lg">
+                 <p className="text-black leading-relaxed font-jomolhari text-lg text-justify">
                      Sharjah Indian School is a Senior Secondary School, Owned and Managed by
                      <br/>
                      Indian Association Sharjah. Established in 1979 with
@@ -66,16 +74,28 @@ import landing2 from'./landing 2.png'
                      <br/>
                      The school is approved and licensed by the Sharjah Private Education Authority (SPEA) ,
                      <br/>
-                      UAE and is affiliated to Central Board of Secondary Education New Delhi, India.
+                     UAE and is affiliated to Central Board of Secondary Education New Delhi, India.
                  </p>
-
-                 <img src={landing2} alt = " image" className="translate-x-full -translate-y-64 scale-90 ml-60 "/>
+                 <img src={landing2} alt=" image"
+                      className="translate-x-full -translate-y-64 scale-90 ml-60 transform-gpu "/>
              </div>
-
-
+             {/*<button onClick={handleButtonClick} className="translate-x-96 ml-96">*/}
+             {/*    <div className="relative animate-bounce">*/}
+             {/*        <img src={button1} alt="button1" className="absolute inset-0 scale-90 cursor-pointer"/>*/}
+             {/*    </div>*/}
+             {/*</button>*/}
+             <div className="translate-x-96 -translate-y-72 ml-64 w-80 h-80">
+                 <button
+                     onClick={handleButtonClick}
+                     className="relative p-0 bg-transparent border-none cursor-pointer scale-50 ">
+                     <img src={button1} alt="button1" className="scale-50"/>
+                 </button>
+             </div>
+             <div className="bg-[#183957] w-full py-6 -translate-y-96"></div>
          </div>
+
      )
- }
+}
 
 
 export default App;
