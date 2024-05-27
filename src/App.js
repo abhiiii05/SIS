@@ -78,7 +78,7 @@ function App() {
                      UAE and is affiliated to Central Board of Secondary Education New Delhi, India.
                  </p>
                  <img src={landing2} alt=" image"
-                      className="translate-x-full rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700"/>
+                      className="translate-x-full rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700 drop-shadow-xl"/>
              </div>
              {/*<button onClick={handleButtonClick} className="translate-x-96 ml-96">*/}
              {/*    <div className="relative animate-bounce">*/}
@@ -101,9 +101,9 @@ function App() {
              <div className="bg-[#183957] w-full py-6 -translate-y-96 -my-20"></div>
 
              <div id="target-element">
-                 <img src={image2} alt=" image" className="-translate-x-52 rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700" />
+                 <img src={image2} alt=" image" className="-translate-x-52 rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700 drop-shadow-xl	" />
              </div>
-             
+
          </div>
 
      )
