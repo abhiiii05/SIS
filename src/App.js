@@ -6,6 +6,8 @@ import './index.css'
 import bannermainImage from './bannermain.png'
 import landing2 from'./landing 2.png'
 import button1 from './buttton1.png'
+// import {Link} from "react-router-dom";
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 
 
@@ -84,14 +86,25 @@ function App() {
              {/*        <img src={button1} alt="button1" className="absolute inset-0 scale-90 cursor-pointer"/>*/}
              {/*    </div>*/}
              {/*</button>*/}
-             <div className="translate-x-96 -translate-y-72 ml-64 w-80 h-80">
+             <div className="translate-x-96 -translate-y-96 ml-64 w-80 h-80">
                  <button
                      onClick={handleButtonClick}
                      className="relative p-0 bg-transparent border-none cursor-pointer scale-50 ">
-                     <img src={button1} alt="button1" className="scale-50"/>
+                     <Link
+                         to="target-element"
+                         smooth={true}
+                         duration={950}
+                         className="cursor-pointer"
+                     >
+                         <img src={button1} alt="button1" className="scale-50"/>
+                     </Link>
                  </button>
              </div>
-             <div className="bg-[#183957] w-full py-6 -translate-y-96"></div>
+             <div className="bg-[#183957] w-full py-6 -translate-y-96 -my-20"></div>
+
+             <div id="target-element">
+                 <img src={landing2} alt=" image" className="-translate-x-52  -translate-y-64 scale-90 ml-60 transform-gpu "/>
+             </div>
          </div>
 
      )
