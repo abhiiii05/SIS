@@ -7,6 +7,7 @@ import bannermainImage from './bannermain.png'
 import landing2 from'./landing 2.png'
 import image2 from './image2.png'
 import button1 from './buttton1.png'
+import banner2 from './banner2.png'
 // import {Link} from "react-router-dom";
 import { Link, animateScroll as scroll } from 'react-scroll';
 
@@ -46,7 +47,7 @@ function App() {
      //min-h-screen h-screen
 
      return (
-         <div className=" bg-[#A5BCC9] overflow-auto overflow-x-hidden">
+         <div className=" bg-[#A5BCC9] overflow-auto overflow-x-hidden min-h-screen felx flex-col">
              <div className="bg-[#183957] w-full py-6">
                  <button className="text-amber-50">click me</button>
                  <h1 className="text-white font-bold font-jomolhari translate-x-52 text-4xl">SHARJAH INDIAN SCHOOL
@@ -104,26 +105,83 @@ function App() {
                  <img src={image2} alt=" image"
                       className="-translate-x-52 rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700 drop-shadow-xl	"/>
              </div>
-             <div className="bg-[#C0DCE3] w-[610px] h-72 translate-x-72 ml-96 -translate-y-[565px] rounded-lg px-8 py-4 drop-shadow-xl">
+             <div
+                 className="bg-[#C0DCE3] w-[610px] h-72 translate-x-72 ml-96 -translate-y-[565px] rounded-lg px-8 py-4 drop-shadow-xl">
                  <h1 className="font-bold font-jomolhari text-[#183957]">OUR VISION</h1>
                  <text className="font-jomolhari text-[#183957]">Educate Enlighten Empower</text>
                  <br/>
                  <br/>
                  <br/>
                  <h1 className="font-bold font-jomolhari text-[#183957]">OUR MISSION</h1>
-                 <text className="font-jomolhari text-[#183957]">To Mould Thinkers, Planners, Readers, Learners and Achievers</text>
+                 <text className="font-jomolhari text-[#183957]">To Mould Thinkers, Planners, Readers, Learners and
+                     Achievers
+                 </text>
                  <br/>
                  <br/>
                  <br/>
                  <h1 className="font-bold font-jomolhari text-[#183957]">OUR AIM</h1>
-                 <text className="font-jomolhari text-[#183957]">Impart education, laying stress on the intellectual, physical, mental, social, asthetic and moral
+                 <text className="font-jomolhari text-[#183957]">Impart education, laying stress on the intellectual,
+                     physical, mental, social, asthetic and moral
                      development of the children.
                  </text>
+
              </div>
 
+             <div className="bg-[#183957] w-full py-6 -translate-y-[500px]"></div>
+             <div>
+                 <img src={banner2} alt="BANNER 2" className="w-full transform-gpu -translate-y-[450px]"/>
+                 <div className="mt-auto overscroll-x-none ">
+                     <footer className="bg-[#183957] text-white py-8">
+                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                 <div>
+                                     <h3 className="text-xl font-semibold mb-4">QUICK LINKS</h3>
+                                     <ul className="space-y-2">
+                                         <li>
+                                             <Link className="hover:underline" href="#">
+                                                 ADMISSION
+                                             </Link>
+                                         </li>
+                                         <li>
+                                             <Link className="hover:underline" href="#">
+                                                 LOGIN
+                                             </Link>
+                                         </li>
+                                         <li>
+                                             <Link className="hover:underline" href="#">
+                                                 CIRCULARS
+                                             </Link>
+                                         </li>
+                                         <li>
+                                             <Link className="hover:underline" href="#">
+                                                 USEFUL LINKS (HOLD)
+                                             </Link>
+                                         </li>
+                                         <li>
+                                             <Link className="hover:underline" href="#">
+                                                 TC DOWNLOAD
+                                             </Link>
+                                         </li>
+                                         <li>
+                                             <Link className="hover:underline" href="#">
+                                                 FEES
+                                             </Link>
+                                         </li>
+                                         <li>
+                                             <Link className="hover:underline" href="#">
+                                                 PRINCIPAL'S MESSAGE
+                                             </Link>
+                                         </li>
+                                     </ul>
+                                 </div>
+                                 <div>
+                                 </div></div></div>
+                     </footer>
+                     {/*// <div className="bg-[#183957] w-full py-6 felx felx-col -translate-y-64 mt-auto h-[200px] "></div>*/}
+                 </div>
+             </div>
          </div>
-
-     )
+)
 }
 
 
