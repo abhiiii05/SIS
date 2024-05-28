@@ -101,7 +101,24 @@ function App() {
              <div className="bg-[#183957] w-full py-6 -translate-y-96 -my-20"></div>
 
              <div id="target-element">
-                 <img src={image2} alt=" image" className="-translate-x-52 rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700 drop-shadow-xl	" />
+                 <img src={image2} alt=" image"
+                      className="-translate-x-52 rounded-lg -translate-y-64 scale-90 ml-60 transform-gpu hover:duration-700 hover:border-sky-200 hover:scale-100 duration-700 drop-shadow-xl	"/>
+             </div>
+             <div className="bg-[#C0DCE3] w-[610px] h-72 translate-x-72 ml-96 -translate-y-[565px] rounded-lg px-8 py-4 drop-shadow-xl">
+                 <h1 className="font-bold font-jomolhari text-[#183957]">OUR VISION</h1>
+                 <text className="font-jomolhari text-[#183957]">Educate Enlighten Empower</text>
+                 <br/>
+                 <br/>
+                 <br/>
+                 <h1 className="font-bold font-jomolhari text-[#183957]">OUR MISSION</h1>
+                 <text className="font-jomolhari text-[#183957]">To Mould Thinkers, Planners, Readers, Learners and Achievers</text>
+                 <br/>
+                 <br/>
+                 <br/>
+                 <h1 className="font-bold font-jomolhari text-[#183957]">OUR AIM</h1>
+                 <text className="font-jomolhari text-[#183957]">Impart education, laying stress on the intellectual, physical, mental, social, asthetic and moral
+                     development of the children.
+                 </text>
              </div>
 
          </div>
