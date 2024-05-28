@@ -2,7 +2,7 @@
 // import { GoogleOAuthProvider } from '@react-oauth/google';
 // import SignInWithGoogle from './SignInWithGoogle';
 import './index.css'
-// import schoolLogo from  './trial-removebg-preview.png'
+import schoolLogo from  './trial-removebg-preview.png'
 import bannermainImage from './bannermain.png'
 import landing2 from'./landing 2.png'
 import image2 from './image2.png'
@@ -48,14 +48,21 @@ function App() {
 
      return (
          <div className=" bg-[#A5BCC9] overflow-auto overflow-x-hidden min-h-screen felx flex-col">
+
              <div className="bg-[#183957] w-full py-6">
+
+
                  <button className="text-amber-50">click me</button>
-                 <h1 className="text-white font-bold font-jomolhari translate-x-52 text-4xl">SHARJAH INDIAN SCHOOL
+                 <h1 className="text-white font-bold font-jomolhari translate-x-72 text-4xl ">SHARJAH INDIAN SCHOOL
                      JUWAIZA</h1>
-                 <h1 className="text-white translate-x-52">EDUCATE | ENLIGHTEN | EMPOWER</h1>
+
+                 <h1 className="text-white translate-x-72 ">EDUCATE | ENLIGHTEN | EMPOWER</h1>
+
+
              </div>
+             <div><img src={schoolLogo} alt="logo" className="scale-50 w-32 h-32 -translate-y-32 translate-x-44"/></div>
              <div>
-                 <img src={bannermainImage} alt="main banner" className="w-full transform-gpu"/>
+                 <img src={bannermainImage} alt="main banner" className="w-full transform-gpu -translate-y-32"/>
              </div>
              <div className="bg-[#183957] w-full py-6"></div>
              <div className="px-8 py-12">
@@ -175,13 +182,15 @@ function App() {
                                      </ul>
                                  </div>
                                  <div>
-                                 </div></div></div>
+                                 </div>
+                             </div>
+                         </div>
                      </footer>
                      {/*// <div className="bg-[#183957] w-full py-6 felx felx-col -translate-y-64 mt-auto h-[200px] "></div>*/}
                  </div>
              </div>
          </div>
-)
+     )
 }
 
 
