@@ -184,13 +184,38 @@ function App() {
                                  <div>
                                  </div>
                              </div>
+
+                         </div>
+                         <div className="gap-8 ">
+                             <div className=" mx-96 translate-x-60 -translate-y-[270px] ">
+                                 <h3 className="text-xl font-semibold">CONTACT US</h3>
+                                 <br/>
+                                 <ul className="space-y-2">
+                                     <li>
+                                         P.O.Box 2324, Sharjah ,United Arab Emirates
+                                     </li>
+                                     <br/>
+                                     <li>
+                                         +971 6 5665775
+                                     </li>
+                                     <br/>
+                                     <li>
+                                         mail@sisjuwaiza.com
+                                     </li>
+                                 </ul>
+                             </div>
+                         </div>
+                         <div className="gap-8 ">
+                             <div className=" mx-96 translate-x-[800px] -translate-y-[460px] ">
+                                 <h3 className="text-xl font-semibold">LOCATE US</h3>
+                             </div>
                          </div>
                      </footer>
                      {/*// <div className="bg-[#183957] w-full py-6 felx felx-col -translate-y-64 mt-auto h-[200px] "></div>*/}
                  </div>
              </div>
          </div>
-     )
+)
 }
 
 
