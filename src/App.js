@@ -64,7 +64,7 @@ function App() {
              <div>
                  <img src={bannermainImage} alt="main banner" className="w-full transform-gpu -translate-y-32"/>
              </div>
-             <div className="bg-[#183957] w-full py-6"></div>
+             <div className="bg-[#183957] w-full py-6 -translate-y-32"></div>
              <div className="px-8 py-12">
                  <h1 className="text-black font-bold font-jomolhari text-4xl mb-4">
                      SHARJAH INDIAN SCHOOL JUWAIZA
