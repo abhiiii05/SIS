@@ -208,6 +208,11 @@ function App() {
                          <div className="gap-8 ">
                              <div className=" mx-96 translate-x-[800px] -translate-y-[460px] ">
                                  <h3 className="text-xl font-semibold">LOCATE US</h3>
+                                 <br/>
+                                 <iframe
+                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d225.47898876750813!2d55.616419242857454!3d25.281892001912105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef58d85e557a4f9%3A0xf31eba69666c83c2!2sSharjah%20Indian%20School%20-%20Boys%20Branch%2C%20Juwaiza!5e0!3m2!1sen!2sae!4v1717161443480!5m2!1sen!2sae"
+                                     className="w-72 h-52 bg-[#A5BCC9] "
+                                     referrerPolicy="no-referrer-when-downgrade"></iframe>
                              </div>
                          </div>
                      </footer>
@@ -215,9 +220,9 @@ function App() {
                  </div>
              </div>
          </div>
-)
+     )
 }
-
+//width="600" height="450" style="border:0;" allowFullScreen="" loading="lazy"
 
 export default App;
 
