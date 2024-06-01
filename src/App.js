@@ -232,6 +232,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from "./landing";
 import Admission from "./admission";
 import Login from "./login";
+//import Curriculum from "./curriculum";
+import CurriculumPage from "./curriculum";
 
 function App() {
     return (
@@ -240,6 +242,7 @@ function App() {
                 <Route path="/" element={<Landing />} />  {/* Landing page at root */}
                 <Route path="/admissions" element={<Admission />} />  {/* Admissions page at /admissions */}
                 <Route path="/login" element={<Login />} />
+                <Route path="/curriculum" element={<CurriculumPage />} />
             </Routes>
         </Router>
     );
