@@ -35,8 +35,14 @@ const AdmissionsPage = () => {
                 <img src={admissionsbanner} alt="main banner" className="w-full transform-gpu -translate-y-32"/>
             </div>
             <div className="bg-[#183957] w-full py-6 -translate-y-32"></div>
+            <div className="px-8 ">
+                <h1 className="text-black font-bold font-jomolhari text-4xl mb-4">
+                    Admissions
+                </h1>
+                <br/>
             <div>
             </div>
+        </div>
         </div>
     );
 };

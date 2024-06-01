@@ -231,6 +231,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from "./landing";
 import Admission from "./admission";
+import Login from "./login";
 
 function App() {
     return (
@@ -238,6 +239,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Landing />} />  {/* Landing page at root */}
                 <Route path="/admissions" element={<Admission />} />  {/* Admissions page at /admissions */}
+                <Route path="/login" element={<Login />} />
             </Routes>
         </Router>
     );
