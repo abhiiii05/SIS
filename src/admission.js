@@ -36,32 +36,32 @@ const AdmissionsPage = () => {
             </div>
             <div className="bg-[#183957] w-full py-6 -translate-y-32"></div>
             <div className="px-8">
-                <h1 className="text-black font-bold font-jomolhari text-4xl mb-4 underline">
+                <h1 className="text-black font-bold font-jomolhari text-4xl mb-4 underline px-12">
                     Admissions
                 </h1>
-                <h2 className="text-black font-jomolhari text-xl mb-4 py-12">SCHOOL UNIFORM</h2>
-                <h4 className="text-black font-jomolhari text-xl mb-4 -my-10">Every child must come to the school neatly dressed
+                <h2 className="text-black font-jomolhari text-xl mb-4 py-12 px-12">SCHOOL UNIFORM</h2>
+                <h4 className="text-black font-jomolhari text-xl mb-4 -my-10 px-12">Every child must come to the school neatly dressed
                     in full school uniform and must wear black shoes with normal heels. Plain white canvas shoes should be used
                     for Physical Education.</h4>
                 <div>
-                    <h2 className="text-black font-jomolhari text-xl mb-4 py-12">SCHOOL TRANSPORT</h2>
-                    <h4 className="text-black font-jomolhari text-xl mb-4 -my-10 text-justify">The school provides transport
+                    <h2 className="text-black font-jomolhari text-xl mb-4 py-12 px-12">SCHOOL TRANSPORT</h2>
+                    <h4 className="text-black font-jomolhari text-xl mb-4 -my-10 text-justify px-12">The school provides transport
                         facilities to different areas in
                         Sharjah, Al Ghusais and Ajman. The bus stops are fixed after a thorough survey of the situations
                         and any request for change
                         of bus stops due to change of residence shall be considered subject to the satisfaction of the
                         head of the institution.</h4>
                     <br/>
-                    <h4 className="text-black font-jomolhari text-xl mb-4 -my-10 py-12 text-justify">The corporation or little enterprise proprietor might maybe not opt
+                    <h4 className="text-black font-jomolhari text-xl mb-4 -my-10 py-12 text-justify px-12">The corporation or little enterprise proprietor might maybe not opt
                         to wait, nevertheless at the similar time it shouldn’t really be anticipated they’ll focus on work as a umpire.</h4>
                     <br/>
-                    <h4 className="text-black font-jomolhari text-xl mb-4 -my-10 py-12 text-justify ">Although the structure transforms based on the needs of
+                    <h4 className="text-black font-jomolhari text-xl mb-4 -my-10 py-12 text-justify px-12">Although the structure transforms based on the needs of
                         the unique situation, the complete approach the correspondence is generally to be written is easy to get. The crucial basis
                         writing a permission letter would be to search for another person’s acceptance for some task that you undoubtedly have to
                         tackle.</h4>
-                    <h4 className="text-black font-jomolhari text-xl mb-4  text-justify ">Once the name is enrolled for bus transport no request for discontinuation will be entertained except at the beginning of the term.</h4>
+                    <h4 className="text-black font-jomolhari text-xl mb-4  text-justify px-12 ">Once the name is enrolled for bus transport no request for discontinuation will be entertained except at the beginning of the term.</h4>
                     <div>
-                        <ol className="py-12">
+                        <ol className="py-12 px-24">
                             <li className="text-black font-jomolhari text-xl mb-4  text-justify ">1st Term :: April, May& June</li>
                             <li className="text-black font-jomolhari text-xl mb-4  text-justify ">2nd Term :: September, October November & December</li>
                             <li className="text-black font-jomolhari text-xl mb-4  text-justify ">3rd Term :: January, February & March</li>
