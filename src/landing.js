@@ -73,7 +73,7 @@ const Landing = () => {
                         {/*//w-80 -translate-x-2 "*/}
                         MENU
                     </h1>
-                        
+
 
                         <li>
                             <a href="admissions" className=" py-8 x-0 h-10 w-60 hover:bg-[#BCD9ED] flex justify-center">
