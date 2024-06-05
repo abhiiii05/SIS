@@ -20,7 +20,11 @@ const AdmissionsPage = () => {
             <div className="bg-[#183957] w-full py-6">
 
 
-                <button className="text-amber-50">click me</button>
+                <div className="px-12 translate-y-10">
+                    <button
+                        className="font-jomolhari text-black rounded bg-[#BFD4E7] hover:duration-200 hover:border-sky-200 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#A5BCC9,0_0_15px_#A5BCC9,0_0_30px_#A5BCC9] hover:scale-105 duration-200  w-24 h-12"> MENU
+                    </button>
+                </div>
                 <h1 className="text-white font-bold font-jomolhari translate-x-72 text-4xl ">SHARJAH INDIAN SCHOOL
                     JUWAIZA</h1>
 
@@ -34,7 +38,9 @@ const AdmissionsPage = () => {
             <div>
                 <img src={admissionsbanner} alt="main banner" className="w-full transform-gpu -translate-y-32"/>
             </div>
-            <div className="bg-[#183957] w-full py-6 -translate-y-32"></div>
+            <div className="bg-[#183957] w-full py-6 -translate-y-32">
+            <h1 className="text-[#C0DCE3] font-bold font-jomolhari text-4xl mb-4  px-12">ADMISSIONS</h1>
+            </div>
             <div className="px-8">
                 <h1 className="text-black font-bold font-jomolhari text-4xl mb-4 underline px-12">
                     Admissions
@@ -71,7 +77,7 @@ const AdmissionsPage = () => {
                 </div>
 
             </div>
-            <div className="mt-auto overscroll-x-none ">
+            <div className="mt-auto overscroll-x-none py-12">
                 <footer className="bg-[#183957] text-white py-8">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

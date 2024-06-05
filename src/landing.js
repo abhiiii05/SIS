@@ -10,26 +10,94 @@ import button1 from './buttton1.png'
 import banner2 from './banner2.png'
 // import {Link} from "react-router-dom";
 import { Link, animateScroll as scroll } from 'react-scroll';
+import Admission from "./admission"
+import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import useScrollToTop from './useScrollToTop';
 
 
 
 
-function App() {
+const Landing = () => {
+    useScrollToTop();
+    const navigate = useNavigate();
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const sidebarRef = useRef(null);
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+    const handleClickOutside = (event) => {
+        if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+            setIsSidebarOpen(false);
+        }
+    };
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+
+    const handleAdmissionClick = () => {
+        navigate('/admissions'); // Programmatic navigation using useNavigate
+    };
+
+    const handleCurriculumClick = () => {
+        navigate('/curriculum'); // Programmatic navigation using useNavigate
+    };
+
+
+//function App() {
     return (
-        <div className=" bg-[#A5BCC9] overflow-auto overflow-x-hidden min-h-screen felx flex-col">
-
+        <div className=" bg-[#A5BCC9] overflow-auto overflow-x-hidden min-h-screen felx flex-col ">
             <div className="bg-[#183957] w-full py-6">
+                <div className="px-12 translate-y-10">
+                    <button
+                        className="font-jomolhari -translate-y-8 text-black rounded bg-[#BFD4E7] hover:duration-200 hover:border-sky-200 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#A5BCC9,0_0_15px_#A5BCC9,0_0_30px_#A5BCC9] hover:scale-105 duration-200 w-24 h-12"
+                        onClick={toggleSidebar}
+                    >
+                        MENU
+                    </button>
+                </div>
+            </div>
+
+            {/* Sidebar */}
+            <div
+                className={`fixed top-0 left-0 h-full bg-[#f1f1f1] shadow-md z-10 transition-transform duration-300 ${
+                    isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+                }`} ref={sidebarRef}
+            >
+                <div className="p-4">
+                    <ul>
+                        <li>
+                            <a href="#" className="block py-2 px-4 hover:bg-gray-300">
+                                Admissions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="block py-2 px-4 hover:bg-gray-300">
+                                Curriculum
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="block py-2 px-4 hover:bg-gray-300">
+                                Login
+                            </a>
+                        </li>
+                        {/* Add more menu items as needed */}
+                    </ul>
+                </div>
+            </div>
 
 
-                <button className="text-amber-50">click me</button>
-                <h1 className="text-white font-bold font-jomolhari translate-x-72 text-4xl ">SHARJAH INDIAN SCHOOL
+                <h1 className="text-white font-bold font-jomolhari translate-x-72 -translate-y-16 text-4xl ">SHARJAH INDIAN SCHOOL
                     JUWAIZA</h1>
 
-                <h1 className="text-white translate-x-72 ">EDUCATE | ENLIGHTEN | EMPOWER</h1>
+                <h1 className="text-white translate-x-72 -translate-y-16">EDUCATE | ENLIGHTEN | EMPOWER</h1>
+        <div></div>
 
-
-            </div>
-            <div><img src={schoolLogo} alt="logo" className="scale-50 w-32 h-32 -translate-y-32 translate-x-44"/></div>
+            <div><img src={schoolLogo} alt="logo" className="scale-50 w-32 h-32 -translate-y-44 translate-x-44"/></div>
             <div>
                 <img src={bannermainImage} alt="main banner" className="w-full transform-gpu -translate-y-32"/>
             </div>
@@ -114,7 +182,7 @@ function App() {
                                     <h3 className="text-xl font-semibold mb-4">QUICK LINKS</h3>
                                     <ul className="space-y-2">
                                         <li>
-                                            <Link className="hover:underline" href="#">
+                                            <Link to="/admissions" className="hover:underline" onClick={handleAdmissionClick} scrollBehavior="smooth">
                                                 ADMISSION
                                             </Link>
                                         </li>
@@ -124,8 +192,8 @@ function App() {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="hover:underline" href="#">
-                                                CIRCULARS
+                                            <Link to="#" className="hover:underline" onClick={handleCurriculumClick}>
+                                                CURRICULUM
                                             </Link>
                                         </li>
                                         <li>
@@ -187,8 +255,10 @@ function App() {
                     </footer>
                     {/*// <div className="bg-[#183957] w-full py-6 felx felx-col -translate-y-64 mt-auto h-[200px] "></div>*/}
                 </div>
+
             </div>
         </div>
+
     )
 }
-export default App;
+export default Landing;
