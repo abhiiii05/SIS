@@ -64,34 +64,39 @@ const Landing = () => {
 
             {/* Sidebar */}
             <div
-                className={`fixed top-0 left-0 h-full bg-[#f1f1f1] shadow-md z-10 transition-transform duration-300 ${
+                className={`fixed top-0 left-0 h-full w-64 bg-[#829DBE] shadow-md z-10 transition-transform duration-300 ${
                     isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
                 }`} ref={sidebarRef}
             >
-                <div className="p-4">
-                    <ul>
+                <div className="px-4">
+                    <ul><h1 className="font-jomolhari bg-[#183957] text-blue-200 flex justify-center ">
+                        {/*//w-80 -translate-x-2 "*/}
+                        MENU
+                    </h1>
+                        
+
                         <li>
-                            <a href="#" className="block py-2 px-4 hover:bg-gray-300">
+                            <a href="admissions" className=" py-8 x-0 h-10 w-60 hover:bg-[#BCD9ED] flex justify-center">
                                 Admissions
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-4 hover:bg-gray-300">
+                            <a href="curriculum"
+                               className=" py-8 px-0 h-10 w-60 hover:bg-[#BCD9ED] flex justify-center">
                                 Curriculum
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-4 hover:bg-gray-300">
+                            <a href="login" className=" py-8 x-0 h-10 w-60 hover:bg-[#BCD9ED] flex justify-center">
                                 Login
                             </a>
                         </li>
-                        {/* Add more menu items as needed */}
                     </ul>
                 </div>
             </div>
 
 
-                <h1 className="text-white font-bold font-jomolhari translate-x-72 -translate-y-16 text-4xl ">SHARJAH INDIAN SCHOOL
+            <h1 className="text-white font-bold font-jomolhari translate-x-72 -translate-y-16 text-4xl ">SHARJAH INDIAN SCHOOL
                     JUWAIZA</h1>
 
                 <h1 className="text-white translate-x-72 -translate-y-16">EDUCATE | ENLIGHTEN | EMPOWER</h1>
@@ -182,9 +187,12 @@ const Landing = () => {
                                     <h3 className="text-xl font-semibold mb-4">QUICK LINKS</h3>
                                     <ul className="space-y-2">
                                         <li>
-                                            <Link to="/admissions" className="hover:underline" onClick={handleAdmissionClick} scrollBehavior="smooth">
+                                            {/*<Link to="/admissions" className="hover:underline" onClick={handleAdmissionClick} scrollBehavior="smooth">*/}
+                                            {/*    ADMISSION*/}
+                                            {/*</Link>*/}
+                                            <a href="admissions" className="hover:underline" >
                                                 ADMISSION
-                                            </Link>
+                                            </a>
                                         </li>
                                         <li>
                                             <Link className="hover:underline" href="#">
