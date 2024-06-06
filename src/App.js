@@ -234,6 +234,7 @@ import Admission from "./admission";
 import Login from "./login";
 //import Curriculum from "./curriculum";
 import CurriculumPage from "./curriculum";
+import Principal from "./principal"
 
 function App() {
     return (
@@ -243,6 +244,7 @@ function App() {
                 <Route path="/admissions" element={<Admission />} />  {/* Admissions page at /admissions */}
                 <Route path="/login" element={<Login />} />
                 <Route path="/curriculum" element={<CurriculumPage />} />
+                <Route path="/principal" element={<Principal />} />
             </Routes>
         </Router>
     );
