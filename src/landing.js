@@ -68,39 +68,46 @@ const Landing = () => {
                     isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
                 }`} ref={sidebarRef}
             >
-                <div className="px-4">
-                    <ul><h1 className="font-jomolhari bg-[#183957] text-blue-200 flex justify-center ">
+                <div className="">
+                    <ul>
+                        {/*<h1 className="font-jomolhari bg-[#183957] text-blue-200 flex justify-center px-0 ">*/}
                         {/*//w-80 -translate-x-2 "*/}
-                        MENU
-                    </h1>
-
+                        {/*    MENU*/}
+                        {/*</h1>*/}
 
                         <li>
-                            <a href="admissions" className=" py-8 x-0 h-10 w-60 hover:bg-[#BCD9ED] flex justify-center">
+                            <a href="login" className=" font-jomolhari py-8 x-0 h-10 w-64 hover:bg-[#BCD9ED] flex justify-center">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login" className=" font-jomolhari py-8 x-0 h-10 w-64 hover:bg-[#BCD9ED] flex justify-center">
+                                Principal's Message
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admissions" className="font-jomolhari py-8 x-0 h-10 w-64 hover:bg-[#BCD9ED] flex justify-center">
                                 Admissions
                             </a>
                         </li>
                         <li>
                             <a href="curriculum"
-                               className=" py-8 px-0 h-10 w-60 hover:bg-[#BCD9ED] flex justify-center">
+                               className="font-jomolhari py-8 px-0 h-10 w-64 hover:bg-[#BCD9ED] flex justify-center">
                                 Curriculum
                             </a>
                         </li>
-                        <li>
-                            <a href="login" className=" py-8 x-0 h-10 w-60 hover:bg-[#BCD9ED] flex justify-center">
-                                Login
-                            </a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
 
 
-            <h1 className="text-white font-bold font-jomolhari translate-x-72 -translate-y-16 text-4xl ">SHARJAH INDIAN SCHOOL
-                    JUWAIZA</h1>
+            <h1 className="text-white font-bold font-jomolhari translate-x-72 -translate-y-16 text-4xl">SHARJAH INDIAN
+                SCHOOL
+                JUWAIZA</h1>
 
-                <h1 className="text-white translate-x-72 -translate-y-16">EDUCATE | ENLIGHTEN | EMPOWER</h1>
-        <div></div>
+            <h1 className="text-white translate-x-72 -translate-y-16">EDUCATE | ENLIGHTEN | EMPOWER</h1>
+            <div></div>
 
             <div><img src={schoolLogo} alt="logo" className="scale-50 w-32 h-32 -translate-y-44 translate-x-44"/></div>
             <div>
