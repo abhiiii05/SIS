@@ -207,13 +207,16 @@ const Landing = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="#" className="hover:underline" onClick={handleCurriculumClick}>
+                                            {/*<Link to="#" className="hover:underline" onClick={handleCurriculumClick}>*/}
+                                            {/*    CURRICULUM*/}
+                                            {/*</Link>*/}
+                                            <a href="curriculum" className="hover:underline">
                                                 CURRICULUM
-                                            </Link>
+                                            </a>
                                         </li>
                                         <li>
                                             <Link className="hover:underline" href="#">
-                                                USEFUL LINKS (HOLD)
+                                            USEFUL LINKS (HOLD)
                                             </Link>
                                         </li>
                                         <li>
@@ -227,9 +230,9 @@ const Landing = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link className="hover:underline" href="#">
-                                                PRINCIPAL'S MESSAGE
-                                            </Link>
+                                            <a href="principal" className="hover:underline">
+                                               PRINCIPAL
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>

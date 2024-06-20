@@ -3,15 +3,31 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import SignInWithGoogle from './SignInWithGoogle';
 import './index.css'
 import schoolLogo from  './trial-removebg-preview.png'
+import { GoogleLogin } from '@react-oauth/google'
 
 
 function App() {
     const[isLoggedin, setIsLoggedIn] = useState(false);
+    const [userInfo, setUserInfo] = useState(null);
     const successfulSignIn = (response) => {
-        console.log( "successfully signed in : ", response);
-        setIsLoggedIn(true)
-        window.location.replace('.src/welcome.js')
-    }
+        console.log("Google OAuth Response:", response);
+
+        // Extract the required user information from the response
+        //const { name, email, picture } = response;
+        const { name, email } = response;
+
+        const userInfoData = {
+            name: name || '',
+            email: email || '',
+            //imageUrl: picture || '',
+            // Add any other relevant user information fields
+        };
+
+        console.log("User Information:", userInfoData);
+        setIsLoggedIn(true);
+        setUserInfo(userInfoData);
+    };
+
     return (
         <div className="min-h-screen h-screen bg-[#183957] flex flex-col items-center justify-center relative">
             <div className="absolute -top-44 -left-44 circle-top-left"></div>
@@ -34,6 +50,5 @@ function App() {
     )
         ;
 }
-
 
 export default App;

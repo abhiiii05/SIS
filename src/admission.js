@@ -85,9 +85,12 @@ const AdmissionsPage = () => {
                                 <h3 className="text-xl font-semibold mb-4">QUICK LINKS</h3>
                                 <ul className="space-y-2">
                                     <li>
-                                        <Link className="hover:underline" href="#">
+                                        {/*<Link to="/admissions" className="hover:underline" onClick={handleAdmissionClick} scrollBehavior="smooth">*/}
+                                        {/*    ADMISSION*/}
+                                        {/*</Link>*/}
+                                        <a href="admissions" className="hover:underline">
                                             ADMISSION
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
                                         <Link className="hover:underline" href="#">
@@ -95,9 +98,12 @@ const AdmissionsPage = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link className="hover:underline" href="#">
-                                            CIRCULARS
-                                        </Link>
+                                        {/*<Link to="#" className="hover:underline" onClick={handleCurriculumClick}>*/}
+                                        {/*    CURRICULUM*/}
+                                        {/*</Link>*/}
+                                        <a href="curriculum" className="hover:underline">
+                                            CURRICULUM
+                                        </a>
                                     </li>
                                     <li>
                                         <Link className="hover:underline" href="#">
@@ -115,9 +121,9 @@ const AdmissionsPage = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link className="hover:underline" href="#">
-                                            PRINCIPAL'S MESSAGE
-                                        </Link>
+                                        <a href="principal" className="hover:underline">
+                                            PRINCIPAL
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
